@@ -2,11 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-/* NOTE:
- * - you may not use atoi
- * - you may not use *any* built-in functions -- strlen, strcpy, etc.
- * - you may assume all integers have <10 digits
- */
 
 typedef struct
 {
@@ -155,30 +150,5 @@ int main(int argc, char *argv[])
     }
     printf("The total is %d\n", Pop(my_stack));
 }
-    /* Turn number1 into an integer.  You will need to do this by
-     * looking at the character string one character at a time, and multiplying
-     * by 10 as you go.
-     * For example: if the string is "214", then I would start by finding the
-     * '2'.  I would think (for the time being) the number is 2.  When I go
-     * to the next character, I would see the "1".  I would then make the 
-     * number 21, by multiplying my previous number (2) by 10 and adding the
-     * current number (1) ... 2*10+1 = 21.
-     * The next number is 4.  Again, take the previous number (21) times 10
-     * and add the current number (4).  This makes 214.
-     * The next character is the NULL character.  So we are done parsing the
-     * string.  And stop at 214.
-     * TRICK #1! --->
-     *    char digit = '5';
-     *    int digit_as_number = digit - '0'; <--- gives you 5.
-     * TRICK #2! --->
-     *    when you encounter a '\0', then use break to terminate the loop
-     *    right then.
-     */
-
-    /* Now figure out which operation to do: plus or minus.
-     * You will do this by inspecting the variable named "operation". */
-
-    /* Now turn number2 into an integer. */
- 
-    /* Perform the operation and print the result */
+   
 
